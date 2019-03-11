@@ -29,7 +29,7 @@
     </div>
     </header>
   <form:form method='POST' modelAttribute="SceneryBean" enctype="multipart/form-data" >
-  <div class="div3"> 
+  <div class="div5"> 
   <div class="div4">
   <div class="div4" style="margin-top:6%;">
   <img id="blah"width="100%" height="100%" style="border: 2px solid rgb(0, 0, 0)" alt="PICTURE" />
