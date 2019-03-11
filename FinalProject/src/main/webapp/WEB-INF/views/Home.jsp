@@ -15,6 +15,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.scrollTo-1.4.2-min.js"></script>
+ <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
  <script>
  /* $(document).ready(function(){
 	$('.div1').localScroll(800);
@@ -75,10 +76,16 @@
  <img id="idnext" class="control2" src="${pageContext.request.contextPath}/images/right.png">
 </div>
 </header>
-<div class="div5">
+<div class="search-box">
+<input class="search-txt" type="text" name="" placeholder="Type to search">
+<a class="search-btn" href="#">
+<i class="fas fa-search"></i>
+</a>
+</div>
+<!-- <div class="div5">
 <input type="text" class="inp1"  name="search" placeholder='SEARCH'>
 <input type="button" class="inp2" name="enter" value='站內搜尋'>
-</div>
+</div> -->
 <div class="div3" id="trip1"></div>
 <div class="div3" id="trip2"></div>
 <div class="div3" id="trip3"></div>

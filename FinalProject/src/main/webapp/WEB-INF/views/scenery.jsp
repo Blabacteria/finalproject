@@ -12,6 +12,7 @@
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
 </head>
 <body>
 <div class="div0">
@@ -24,18 +25,26 @@
     <img class="img1" alt="" src="">
     </div>
     </header>
-
+<div class="div3">
   <c:forEach var="view" items="${views}">
-  <div class="div3">
-  <h2>${view.name}</h2>
+  <div style="width:300px;height:350px;margin:10px;float:right">
+  <div class="card middle">
+<div class="front">
+<img style="width:100%;height:100%" src="<c:url value='/getphoto/${view.viewid}'/>"/>
+</div>
+<div class="back">
+<div class="back-content middleback">
+<h2>${view.name}</h2>
   <h4>${view.country}</h4>
   <h4>${view.city}</h4>
   <h4>${view.address}</h4>
   <p>${view.introduction}</p>
-  <img width="200px" height="200px" src="<c:url value='/getphoto/${view.viewid}'/>"/>
-  </div>
-  </c:forEach>
-
+</div>
+</div>
+</div>
+</div>
+</c:forEach>
+</div>
 </div>
 </body>
 </html>

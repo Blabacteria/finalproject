@@ -164,3 +164,44 @@ html, body {
 	font-weight: 900;
 	margin-top:5px;
 }
+.search-box{
+	position:absolute;
+	top:24%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:#0a3d62;
+	height:60px;
+	border-radius: 60px;
+	padding:10px;
+}
+.search-box:hover> .search-txt{
+	width:400px;
+	padding:0 6px;
+}
+.search-box:hover> .search-btn{
+	background: white;
+}
+.search-btn{
+	color:#e84118;
+	float:right;
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+	background: #0a3d62;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	transition:0.4s;
+}
+.search-txt{
+	border:none;
+	background: none;
+	outline: none;
+	float:left;
+	padding:0;
+	color:white;
+	font-size: 30px;
+	transition:0.4s;
+	line-height: 60px;
+	width:0px;
+}

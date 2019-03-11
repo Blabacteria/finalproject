@@ -22,7 +22,7 @@
     <a href=""><label class="lab1">登入</label><img class="img2" src="${pageContext.request.contextPath}/images/login.png">
     </a>
     <img class="img1" alt="" src="">
-    <a href="editorpackage"><label class="lab2">製作套裝</label></a>
+    <a href="editorpackage"><label class="lab2" style="background-color: rgb(255, 119, 51)">製作套裝</label></a>
     <a href="editorviews"><label class="lab2">增加景點</label></a>
     <a href=""><label class="lab2">會員管理</label></a>
     <a href=""><label class="lab2">報表分析</label></a>
