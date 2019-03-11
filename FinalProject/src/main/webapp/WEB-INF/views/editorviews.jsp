@@ -37,7 +37,7 @@
   <br><span class="spn1">景點照片:</span>
   <form:input type="file" class="inp1" id="imgInp" path="viewImage" accept="image/x-png,image/gif,image/jpeg" style="width:40%;height:50px;margin-top:10px"  onchange="document.getElementById('blah').src = window.URL.createObjectURL(this.files[0])"/><br>
   <span class="spn1">景點介紹:</span><br>
-  <form:textarea path="introduction" style="width:40%;height:50%;margin-left:30px;border: 2px solid rgb(0, 0, 0)" placeholder='景點介紹...' />
+  <form:textarea path="introduction" style="width:40%;height:50%;margin-left:30px;border: 2px solid rgb(0, 0, 0);padding:5px" placeholder='景點介紹...' />
   </div><br>
  <span class="spn1">景點名稱:</span><form:input type="text" class="inp1" path="name" placeholder='景點名稱'/><br>
  <span class="spn1">景點國家:</span><form:input type="text" class="inp1" path="country" placeholder='景點國家'/><br>

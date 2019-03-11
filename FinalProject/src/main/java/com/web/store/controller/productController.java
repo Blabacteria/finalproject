@@ -80,7 +80,7 @@ public class productController {
 			e.printStackTrace();
 			throw new RuntimeException("檔案上傳發生異常: " + e.getMessage());
 		}
-		return "editorviews";		
+		return "redirect:/editorviews";		
 	}
 	@RequestMapping(value = "/getphoto/{viewid}", method = RequestMethod.GET)
 	public ResponseEntity<byte[]> getphoto(HttpServletResponse resp, @PathVariable Integer viewid) {

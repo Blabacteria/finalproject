@@ -39,7 +39,7 @@ html, body {
 }
 .div3 {
 	width: 85%;
-	height: 1000px;
+	overflow:hidden;
 	border-radius: 10px;
 	background: no-repeat fixed;
 	background-size:110%;
