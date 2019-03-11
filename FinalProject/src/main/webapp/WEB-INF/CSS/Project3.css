@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: font-family : 'Noto Sans TC', sans-serif;
+	font-color: rgb(0, 0, 0);
+}
+a{
+	text-decoration: none;
+	background-color: none;
+	color: rgb(0, 0, 0);
+}
+html, body {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	background: white;
+}
+
+.header1 {
+	margin: auto;
+}
+
+.div0 {
+	width: 100%;
+	position: relative;
+	margin: auto;
+}
+
+.div1 {
+	width: 85%;
+	height: 50px;
+	margin: auto;
+	top: 0;
+	border-bottom: 5px solid green;
+	position: fixed;
+	z-index: 100;
+	right: 7.5%;
+	left: 7.5%;
+}
+.div3 {
+	width: 85%;
+	height: 500px;
+	border-radius: 10px;
+	background: no-repeat fixed;
+	background-size:110%;
+	background-color: rgb(255, 255, 128);
+	margin: auto;
+	clear: both;
+	margin-top: 70px;
+	border-radius: 25px;
+}
+.div4{
+	width:50%;
+	height:80%;
+	float:right;
+	background-color: rgb(128, 159, 255);
+	margin:auto;
+	margin-top:3%;
+	margin-right:3%;
+	z-index: 100;
+	border-radius:25px;
+}
+.divfoot{
+	width:100%;
+	height: 80px;
+	position: static;
+	background-color: rgb(179, 255, 102);
+}
+.lab0 {
+	float: left;
+	width: 400px;
+	font-family: 'Righteous', cursive;
+	font-size: 50px;
+	color: rgb(0, 0, 0);
+}
+
+.lab1 {
+	float: right;
+	width: 60px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+	margin-left: 1px;
+	margin-right:5px;
+	background-color: rgb(179, 224, 255);
+	border-radius: 5px;
+}
+.lab2{
+	float: right;
+	width: 120px;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 18px;
+	margin-left: 1px;
+	margin-right:5px;
+	background-color: rgb(179, 224, 255);
+	border-radius: 5px;
+}
+.img1 {
+	width: 20px;
+	float: right;
+}
+
+.img2 {
+	float: right;
+	height: 80%;
+	margin-top: 15px;
+}
+.inp1{
+	width:25%;
+	height:30px;
+	margin:auto;
+	margin-top:30px;
+	margin-left:20px;
+	font-size: 30px;
+}
+.inp2{
+	width:3%;
+	height:10px;
+	margin:auto;
+	margin-top:30px;
+}
+.inp3{
+	width:10%;
+	height:30px;
+	font-size:20px;
+	margin-left:15%;
+	margin-top:30px;
+}
+.spn1{
+	width:10%;
+	height:30px;
+	margin:auto;
+	margin-top:30px;
+	margin-left:30px;
+	font-size: 30px;
+}
