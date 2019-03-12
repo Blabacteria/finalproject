@@ -8,10 +8,10 @@
 <head>
 <meta charset="UTF-8">
 <title>${title}</title>
-<link rel='stylesheet' href='${pageContext.request.contextPath}/CSS/Project2.css'  type="text/css" />
-<link rel='stylesheet' href='${pageContext.request.contextPath}/CSS/Project2.css'  type="text/css" />
+<link rel='stylesheet' href='${pageContext.request.contextPath}/CSS/editorpackage.css'  type="text/css" />
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:700" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="div0">
@@ -29,8 +29,41 @@
     </div>
     </header>
  <div class="div3">
- <input >
- 
+ <div class="div5">
+ <form action="Filter1" method="post">
+<div class="search-box">
+<input class="search-txt" type="text" name="country" placeholder="Country">
+<a class="search-btn" href="#">
+<i class="fas fa-search"></i>
+</a>
+</div>
+<div class="search-box2">
+<input class="search-txt" type="text" name="city" placeholder="City">
+<a class="search-btn" href="#">
+<i class="fas fa-search"></i>
+</a>
+</div>
+<input type="submit">
+</form>
+<c:forEach var="view" items="${Views}">
+<label>${view.name}</label>
+<p>${view.introduction}</p>
+</c:forEach>
+</div>
+ <fieldset class="fie1"><legend>請輸入套裝天數及標題</legend>
+ <form action="join.do">
+<label>標題:</label><input type="text" name="title" style="width:50%;text-align:center"><p>
+<label>天數:</label><input type="text"  name="days" style="width:50%;text-align:center"><p>
+ <input type="Submit" value="Submit">
+</form>
+ <h2>${packagetitle}</h2> <h4>${day}</h4>
+ <c:forEach var="i" begin="1" end="${days}" step="1" varStatus="check">
+<div class="div4">
+<label class="lab3">第${i}天</label>
+</div>
+</c:forEach>
+
+ </fieldset>
  </div>
 </div>
 </body>

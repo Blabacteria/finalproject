@@ -26,4 +26,5 @@ public class HomeController {
 		model.addAttribute("title", "TO-touring");
 		return "editorviews";
 	}
+	
 }

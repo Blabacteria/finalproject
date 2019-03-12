@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.web.store.dao.sceneryDao;
 import com.web.store.model.SceneryBean;
+import com.web.store.model.TripBean;
 import com.web.store.service.sceneryService;
 @Service
 public class sceneryServiceImpl implements sceneryService {   
@@ -29,6 +30,78 @@ public class sceneryServiceImpl implements sceneryService {
 	@Transactional
 	public SceneryBean getViewById(int viewid) {		
 		return dao.getViewById(viewid);
+	}
+	@Override
+	@Transactional
+	public List<SceneryBean> FilterCountryService(String country) {
+		List<SceneryBean> list = null;
+		String regex1 =  "^[A-Za-z0-9\u4e00-\u9fa5]+$";
+		Integer countrynamecorrect = 0;
+		if(country !="") {
+			boolean countrynameboolean = country.matches(regex1);
+			if(countrynameboolean) {
+				countrynamecorrect = 1;
+			}
+		}else {
+			countrynamecorrect = 1;
+		}
+		if(countrynamecorrect == 1) {
+		list= dao.FilterCountrySceneryDao(country);
+		}else {
+			list = null;
+		}
+		return list;
+	}
+	@Override
+	@Transactional
+	public List<SceneryBean> FilterCityService(String city) {
+		List<SceneryBean> list = null;
+		String regex1 =  "^[A-Za-z0-9\u4e00-\u9fa5]+$";
+		Integer citynamecorrect = 0;
+		if(city !="") {
+			boolean citynameboolean = city.matches(regex1);
+			if(citynameboolean) {
+				citynamecorrect = 1;
+			}
+		}else {
+			citynamecorrect = 1;
+		}
+		if(citynamecorrect == 1) {
+		list= dao.FilterCountrySceneryDao(city);
+		}else {
+			list = null;
+		}
+		return list;
+	}
+	@Override
+	@Transactional
+	public List<SceneryBean> FilterCountryCitySceneryDao(String country, String city) {
+		List<SceneryBean> list = null;
+		String regex1 =  "^[A-Za-z0-9\u4e00-\u9fa5]+$";
+		Integer countrynamecorrect = 0;
+		Integer citynamecorrect = 0;
+		if(country !="") {
+			boolean countrynameboolean = country.matches(regex1);
+			if(countrynameboolean) {
+				countrynamecorrect = 1;
+			}
+		}else {
+			countrynamecorrect = 1;
+		}
+		if(city !="") {
+			boolean citynameboolean = city.matches(regex1);
+			if(citynameboolean) {
+				citynamecorrect = 1;
+			}
+		}else {
+			citynamecorrect = 1;
+		}
+		if(citynamecorrect == 1 && countrynamecorrect == 1) {
+			list= dao.FilterCountryCitySceneryDao(country, city);
+			}else {
+				list = null;
+			}
+		return list;
 	}
 
 }

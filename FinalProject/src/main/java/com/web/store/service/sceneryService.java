@@ -11,4 +11,7 @@ public interface sceneryService {
 List<SceneryBean> getAllProducts();
 public SceneryBean getViewById(int viewid);
 void addScenery(SceneryBean view);
+List<SceneryBean>FilterCountryService(String country);
+List<SceneryBean>FilterCityService(String city);
+List<SceneryBean> FilterCountryCitySceneryDao(String country, String city);
 }

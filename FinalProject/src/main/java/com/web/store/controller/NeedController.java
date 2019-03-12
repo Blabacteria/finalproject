@@ -23,10 +23,6 @@ import com.web.store.model.NeedBean;
 import com.web.store.model.TripBean;
 import com.web.store.service.NeedService;
 
-
-
-
-
 @Controller
 public class NeedController {
 		@Autowired
@@ -80,8 +76,7 @@ public class NeedController {
 			System.out.println("GetTogether");
 			List<TripBean> list = service.GetAllTogetherService();
 			model.addAttribute("Together", list);
-			return "Together";
-			
+			return "Together";			
 		}
 		//篩選
 //		@RequestMapping(value="/Filter",method=RequestMethod.GET)

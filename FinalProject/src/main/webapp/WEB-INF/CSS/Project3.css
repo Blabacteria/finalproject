@@ -2,7 +2,6 @@
 * {
 	margin: 0;
 	padding: 0;
-	font-family: font-family : 'Noto Sans TC', sans-serif;
 	font-color: rgb(0, 0, 0);
 }
 a{
@@ -24,7 +23,7 @@ html, body {
 .div0 {
 	position: relative;
 	margin: auto;
-	width: 1600px;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -100,6 +99,7 @@ html, body {
 	margin-right:5px;
 	background-color: rgb(179, 224, 255);
 	border-radius: 5px;
+		font-family : 'Noto Sans TC', sans-serif;
 }
 .lab2{
 	float: right;
@@ -111,6 +111,7 @@ html, body {
 	margin-right:5px;
 	background-color: rgb(179, 224, 255);
 	border-radius: 5px;
+	font-family : 'Noto Sans TC', sans-serif;
 }
 .img1 {
 	width: 20px;
@@ -174,6 +175,7 @@ html, body {
 	transform:perspective(600px) rotateY(0deg);
 }
 .back{
+	overflow:inherit;
 	background:#f1f1f1;
 	transform:perspective(600px) rotateY(180deg);
 }

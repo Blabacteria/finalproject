@@ -11,6 +11,7 @@ import org.springframework.stereotype.Repository;
 import com.web.store.dao.sceneryDao;
 
 import com.web.store.model.SceneryBean;
+import com.web.store.model.TripBean;
 @Repository
 public class sceneryDaoImpl implements sceneryDao {
 
@@ -41,4 +42,53 @@ public class sceneryDaoImpl implements sceneryDao {
 		return sc;
 	}
 
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<SceneryBean> FilterCountrySceneryDao(String country) {
+		Session session = factory.getCurrentSession();
+		List<SceneryBean>list = new ArrayList<SceneryBean>();
+		String hql = "From SceneryBean ";
+		if(country == "") {
+			hql += "where country LIKE" +" country";
+		}else {
+			hql +=  "where country LIKE" + " '%" +country +"%'" ;
+		}
+		list = session.createQuery(hql).getResultList();
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<SceneryBean> FilterCitySceneryDao(String city) {
+		Session session = factory.getCurrentSession();
+		List<SceneryBean>list = new ArrayList<SceneryBean>();
+		String hql = "From SceneryBean ";
+		if(city == "") {
+			hql += "where city LIKE" +" city";
+		}else {
+			hql +=  "where city LIKE" + " '%" +city +"%'";
+		}
+		list = session.createQuery(hql).getResultList();
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<SceneryBean> FilterCountryCitySceneryDao(String country, String city) {
+		Session session = factory.getCurrentSession();
+		List<SceneryBean>list = new ArrayList<SceneryBean>();
+		String hql = "From SceneryBean " ;
+		if(country == "") {
+			hql += "where country LIKE" +" country";
+		}else {
+			hql +=  "where country LIKE" + " '%" +country +"%'" ;
+		}
+		if(city == "") {
+			hql += " AND city LIKE" +" city";
+		}else {
+			hql +=  " AND city LIKE" + " '%" +city +"%'" ;
+		}
+		list = session.createQuery(hql).getResultList();
+		return list;
+	}
 }

@@ -138,4 +138,6 @@ public class productController {
 	public void whiteListing(WebDataBinder binder) {
 		binder.setAllowedFields("name", "address", "country", "city","needticket","price","introduction","viewImage");
 	}
+	//
+	
 }
