@@ -23,7 +23,7 @@ public class TravelController {
 	@Autowired
 	ServletContext context;
 	
-	String day ;
+	String day ="0";
 	String title1;
 	@RequestMapping(value="join.do")
 	public String toJoin(@RequestParam("title") String title, @RequestParam("days") String days, Model model) {

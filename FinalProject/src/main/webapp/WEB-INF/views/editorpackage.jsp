@@ -31,29 +31,23 @@
  <div class="div3">
  <div class="div5">
  <form action="Filter1" method="post">
-<div class="search-box">
+ <div class="div4">
 <input class="search-txt" type="text" name="country" placeholder="Country">
-<a class="search-btn" href="#">
-<i class="fas fa-search"></i>
-</a>
-</div>
-<div class="search-box2">
 <input class="search-txt" type="text" name="city" placeholder="City">
-<a class="search-btn" href="#">
-<i class="fas fa-search"></i>
-</a>
+<input class="inp1" type="submit">
 </div>
-<input type="submit">
 </form>
 <c:forEach var="view" items="${Views}">
+<div class="div4">
 <label>${view.name}</label>
-<p>${view.introduction}</p>
+<img src="<c:url value='/getphoto/${view.viewid}'/>" style="height:50px;float:right"/>
+</div>
 </c:forEach>
 </div>
  <fieldset class="fie1"><legend>請輸入套裝天數及標題</legend>
  <form action="join.do">
-<label>標題:</label><input type="text" name="title" style="width:50%;text-align:center"><p>
-<label>天數:</label><input type="text"  name="days" style="width:50%;text-align:center"><p>
+<label>標題:</label><input type="text" name="title" style="width:50%;text-align:center" placeholder="標題"><br>
+<label>天數:</label><input type="text"  name="days" style="width:50%;text-align:center" placeholder="天數"><br>
  <input type="Submit" value="Submit">
 </form>
  <h2>${packagetitle}</h2> <h4>${day}</h4>
