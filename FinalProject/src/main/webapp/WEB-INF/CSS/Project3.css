@@ -191,3 +191,44 @@ html, body {
 .card:hover >.back{
 	transform:perspective(600px) rotateY(0deg);
 }
+.search-box{
+	position:absolute;
+	top:70%;
+	left:80%;
+	transform:translate(-50%,-50%);
+	background:#0a3d62;
+	height:25px;
+	border-radius: 25px;
+	padding:2px;
+}
+.search-box:hover> .search-txt{
+	width:100px;
+	padding:0 6px;
+}
+.search-box:hover> .search-btn{
+	background: white;
+}
+.search-btn{
+	color:#e84118;
+	float:right;
+	width:25px;
+	height:25px;
+	border-radius: 50%;
+	background: #0a3d62;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	transition:0.4s;
+}
+.search-txt{
+	border:none;
+	background: none;
+	outline: none;
+	float:left;
+	padding:0;
+	color:white;
+	font-size: 20px;
+	transition:0.4s;
+	line-height: 3px;
+	width:0px;
+}

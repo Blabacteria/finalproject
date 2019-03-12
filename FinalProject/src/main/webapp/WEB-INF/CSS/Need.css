@@ -1,0 +1,73 @@
+@charset "UTF-8";
+textarea {
+	resize: none;
+	border: 1.5px solid black;
+	border-radius: 8px;
+	padding: 5px;
+	font-family: 微軟正黑體;
+	font-weight: 500;
+	font-size: 17px;
+	margin:10px;
+	margin-left:0px;
+}
+
+textarea:focus {
+	outline: none;
+	/*      border-color: #719ECE;  */
+	border-color: gray;
+	/*      box-shadow: 0 0 10px #719ECE;  */
+	box-shadow: 0 0 7px gray;
+	
+}
+
+select{
+	border: 1px solid gray;
+	width: 60px;
+	height: 34px;
+	padding:0px;
+	padding-left: 2px;
+	padding-right: 15px;
+	
+	background-color: #F6F7F7;
+	font-size:17px;
+	outline: none;
+	
+}
+
+
+fieldset {
+
+	margin: auto;
+	border-radius: 20px;
+	padding: 20px;
+	font-family: 微軟正黑體;
+	font-weight: 900;
+	
+}
+
+#needbutton {
+	font-family: 微軟正黑體;
+	font-weight: 900;
+	font-size:20px;
+	border-radius:10px;
+	background-color:lightblue;
+	border:2px solid darkgray;
+	padding:10px;	
+}
+.formdiv{
+	margin-top:10px;
+	margin-bottom:10px;
+	width:50%;
+}
+hr{
+	width:500px;
+	
+	
+}
+
+
+legend {
+	text-align: center;
+	font-size: 35px;
+
+}

@@ -23,11 +23,17 @@
     <a href="editor"><label class="lab1">登入</label><img class="img2" src="${pageContext.request.contextPath}/images/login.png">
     </a>
     <img class="img1" alt="" src="">
+    <div class="search-box">
+<input class="search-txt" type="text" name="" placeholder="search">
+<a class="search-btn" href="#">
+<i class="fas fa-search"></i>
+</a>
+</div>
     </div>
     </header>
 <div class="div3">
   <c:forEach var="view" items="${views}">
-  <div style="width:300px;height:350px;margin:10px;float:right">
+  <div style="width:300px;height:350px;margin:11.1px;float:left">
   <div class="card middle">
 <div class="front">
 <img style="width:100%;height:100%" src="<c:url value='/getphoto/${view.viewid}'/>"/>

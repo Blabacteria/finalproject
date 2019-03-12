@@ -66,8 +66,8 @@
 <div class="div4">
 <a href="#trip1" ><label class="label1">機票搜詢</label></a>
 <a href="#trip2" ><label class="label1">套裝行程</label></a>
-<a href="#trip3" ><label class="label1">自訂行程</label></a>
-<a href="#trip4" ><label class="label1">尋找出團</label></a>
+<a href="selectNeed" ><label class="label1">自訂行程</label></a>
+<a href="GetTogether" ><label class="label1">尋找出團</label></a>
 <a href="scenery" ><label class="label1">熱門景點</label></a>
 </div>
 </nav>
