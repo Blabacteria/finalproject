@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.ALLDIV{
+	width: 1360px;
+	margin-right: auto;
+	margin-left: auto;
+}
 textarea {
 	resize: none;
 	border: 1.5px solid black;

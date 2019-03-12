@@ -16,8 +16,8 @@
 
 	<script type="text/javascript">
 			$(document).ready(function(){
-				$("#tripdays").change(function(){
-					$("#submit").click();
+				/* $("#tripdays").change(function(){
+					$("#submit").click(); */
 					
 					})
 					

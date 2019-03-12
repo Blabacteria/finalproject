@@ -56,8 +56,8 @@
 <div class="div0">
 <header class="header1">
 <div class="div1">
-    <a href="#"><label class="lab0">To-touring</label></a>
-    <a href=""></a><label class="lab1">註冊</label></a>
+    <a href="${pageContext.request.contextPath}/"><label class="lab0">To-touring</label></a>
+    <a href=""><label class="lab1">註冊</label></a>
     <a href=""><label class="lab1">登入</label><img class="img2" src="${pageContext.request.contextPath}/images/login.png">
     </a>
     <img class="img1" alt="" src="">
