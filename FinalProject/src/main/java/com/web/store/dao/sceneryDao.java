@@ -12,4 +12,6 @@ public interface sceneryDao {
 	List<SceneryBean>FilterCountrySceneryDao(String country);
 	List<SceneryBean>FilterCitySceneryDao(String city);
 	List<SceneryBean>FilterCountryCitySceneryDao(String country,String city);
+	List<String>SelectCountryCitySceneryDao(String country);
+	List<String> SelectCityDao(String city);
 }

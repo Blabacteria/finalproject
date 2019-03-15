@@ -91,4 +91,34 @@ public class sceneryDaoImpl implements sceneryDao {
 		list = session.createQuery(hql).getResultList();
 		return list;
 	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<String> SelectCountryCitySceneryDao(String country) {
+		Session session = factory.getCurrentSession();
+		List<String> list = new ArrayList<String>();
+		String hql = "SELECT DISTINCT city From SceneryBean " ;
+		if(country == "") {
+			hql += "where country LIKE" +" country";
+		}else {
+			hql +=  "where country LIKE" + " '%" +country +"%'" ;
+		}
+		list = session.createQuery(hql).getResultList();
+		System.out.println(list);
+		return list;
+	}
+
+	@SuppressWarnings("unchecked")
+	@Override
+	public List<String> SelectCityDao(String city) {
+		Session session = factory.getCurrentSession();
+		String hql = "SELECT DISTINCT city From SceneryBean ";
+		if(city == "") {
+			hql += "where city LIKE" +" city";
+		}else {
+			hql +=  "where city LIKE" + " '%" +city +"%'";
+		}
+		List<String> selcity =session.createQuery(hql).getResultList();
+		return selcity;
+	}
 }

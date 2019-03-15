@@ -14,4 +14,6 @@ void addScenery(SceneryBean view);
 List<SceneryBean>FilterCountryService(String country);
 List<SceneryBean>FilterCityService(String city);
 List<SceneryBean> FilterCountryCitySceneryDao(String country, String city);
+List<String>SelectCountryCitySceneryDao(String country);
+List<String> SelectCityDao(String city);
 }

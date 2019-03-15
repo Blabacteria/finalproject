@@ -67,7 +67,7 @@ public class sceneryServiceImpl implements sceneryService {
 			citynamecorrect = 1;
 		}
 		if(citynamecorrect == 1) {
-		list= dao.FilterCountrySceneryDao(city);
+		list= dao.FilterCitySceneryDao(city);
 		}else {
 			list = null;
 		}
@@ -102,6 +102,48 @@ public class sceneryServiceImpl implements sceneryService {
 				list = null;
 			}
 		return list;
+	}
+	@Override
+	@Transactional
+	public List<String> SelectCountryCitySceneryDao(String country) {
+		List<String> list = null;
+		String regex1 =  "^[A-Za-z0-9\u4e00-\u9fa5]+$";
+		Integer countrynamecorrect = 0;
+		if(country !="") {
+			boolean countrynameboolean = country.matches(regex1);
+			if(countrynameboolean) {
+				countrynamecorrect = 1;
+			}
+		}else {
+			countrynamecorrect = 1;
+		}
+		if(countrynamecorrect == 1) {
+		list= dao.SelectCountryCitySceneryDao(country);
+		}else {
+			list = null;
+		}
+		return list;
+	}
+	@Override
+	@Transactional
+	public List<String> SelectCityDao(String city) {
+		String regex1 =  "^[A-Za-z0-9\u4e00-\u9fa5]+$";
+		List<String> selcity;
+		Integer citynamecorrect = 0;
+		if(city !="") {
+			boolean citynameboolean = city.matches(regex1);
+			if(citynameboolean) {
+				citynamecorrect = 1;
+			}
+		}else {
+			citynamecorrect = 1;
+		}
+		if(citynamecorrect == 1) {
+		selcity = dao.SelectCityDao(city);
+		}else {
+			selcity = null;
+		}
+		return selcity;
 	}
 
 }

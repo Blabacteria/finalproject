@@ -11,7 +11,8 @@
 <title>${title}</title>
 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-<link rel='stylesheet' href='${pageContext.request.contextPath}/CSS/Project3.css' type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <link rel='stylesheet' href='${pageContext.request.contextPath}/CSS/Together.css' type="text/css" />
 
 	<script type="text/javascript">
