@@ -121,4 +121,12 @@ public class sceneryDaoImpl implements sceneryDao {
 		List<String> selcity =session.createQuery(hql).getResultList();
 		return selcity;
 	}
+
+	@Override
+	public SceneryBean getViewByName(String viewname) {
+		Session session = factory.getCurrentSession();
+		String hql = "From SceneryBean where name =:viewname";
+		SceneryBean sc = (SceneryBean) session.createQuery(hql).setParameter("viewname", viewname).getSingleResult();
+		return sc;
+	}
 }

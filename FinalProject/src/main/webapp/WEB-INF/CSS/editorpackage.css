@@ -60,16 +60,18 @@ html, body {
 	padding:10px;
 }
 .div4{
-	width:100%;
+	width:90%;
 	height:70px;
 	overflow:hidden;
 	margin:10px;
 	padding:10px;
 }
 .div5{
-	width:35%;
+	width:25%;
+	height:500px;
+	transform:translateY(20%);
 	float:right;
-	overflow:hidden;
+	overflow:auto;
 }
 .div6{
 	width:95%;
@@ -77,11 +79,14 @@ html, body {
 	margin:auto;
 	padding:10px;
 }
-.div7{
-	width:95%;
-	height:70px;
-	overflow:hidden;
-	margin:auto;
+.li1{
+	float:left;
+	width:50%;
+	height:40px;
+	font-size:25px;
+	margin-left:23%;
+	background-color:#e84393;
+	border-radius: 25px;
 	
 }
 .fie1{
@@ -130,7 +135,7 @@ legend{
 .lab3{
 	float:left;
 	width:50%;
-	margin-left:20%;
+	margin-left:25%;
 	background-color:#e55039;
 	border-radius: 25px;
 }

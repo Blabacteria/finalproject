@@ -8,6 +8,7 @@ import com.web.store.model.SceneryBean;
 public interface sceneryDao {
 	List<SceneryBean> getAllProducts();
 	public SceneryBean getViewById(int viewid);
+	public SceneryBean getViewByName(String viewname);
 	void addScenery(SceneryBean view);
 	List<SceneryBean>FilterCountrySceneryDao(String country);
 	List<SceneryBean>FilterCitySceneryDao(String city);

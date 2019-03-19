@@ -145,5 +145,10 @@ public class sceneryServiceImpl implements sceneryService {
 		}
 		return selcity;
 	}
+	@Transactional
+	@Override
+	public SceneryBean getViewByName(String viewname) {		
+		return dao.getViewByName(viewname);
+	}
 
 }

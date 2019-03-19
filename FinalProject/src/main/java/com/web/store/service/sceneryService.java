@@ -10,6 +10,7 @@ import com.web.store.model.SceneryBean;
 public interface sceneryService {
 List<SceneryBean> getAllProducts();
 public SceneryBean getViewById(int viewid);
+public SceneryBean getViewByName(String viewname);
 void addScenery(SceneryBean view);
 List<SceneryBean>FilterCountryService(String country);
 List<SceneryBean>FilterCityService(String city);

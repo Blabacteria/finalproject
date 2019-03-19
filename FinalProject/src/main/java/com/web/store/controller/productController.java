@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Blob;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.servlet.ServletContext;
@@ -27,6 +28,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 
@@ -115,6 +118,15 @@ public class productController {
 	    ResponseEntity<byte[]> responseEntity = 
 	                new ResponseEntity<>(media, headers, HttpStatus.OK);
 	    return responseEntity;
+	}
+	@ResponseBody
+	@RequestMapping(value="/viewintro",method=RequestMethod.POST)
+	public HashMap<String,String> viewintro(Model model, @RequestParam String viewname) {
+		SceneryBean list = service.getViewByName(viewname);
+		HashMap<String,String> viewintro = new HashMap<>();
+		viewintro.put("name", list.getName());
+		viewintro.put("country", list.getCountry());
+		return viewintro;		
 	}
 	private byte[] toByteArray(String filepath) {
 	      byte[] b = null;
